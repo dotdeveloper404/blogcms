@@ -55,7 +55,7 @@ const FeaturedPosts = () => {
     <div className='mb-8'>
         <Carousel itemAriaLabel='11' infinite customLeftArrow={customLeftArrow} customRightArrow={customRightArrow} responsive={responsive} itemClass="px-4">
             {dataLoaded && featureddPosts.map((post,index)=>(
-                <FeaturedPostCard post={post}/>
+                <FeaturedPostCard key={index} post={post}/>
             ))};
         </Carousel>
     </div>
